@@ -47,7 +47,7 @@ http://192.168.1.141:8080/?SELECT * FROM sqlite_master WHERE type = 'table';
 
 #LICENSE
 
-Copyright 2014-2015 AigeStudio(https://github.com/AigeStudio)
+Copyright 2014-2015 Lusfold(https://github.com/lusfold)
 
 Licensed under the Apache License, Version 2.0 (the "License");you may not use this file except in compliance with the License.
 
