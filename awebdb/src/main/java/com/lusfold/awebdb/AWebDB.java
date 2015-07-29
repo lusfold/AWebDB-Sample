@@ -8,9 +8,8 @@ import com.lusfold.awebdb.utils.LogUtil;
 import com.lusfold.awebdb.utils.NetUtils;
 
 import java.io.IOException;
-
 /**
- * Created by bzh on 15/7/13.
+ * @author <a href="http://www.lusfold.com" target="_blank">Lusfold</a>
  */
 public class AWebDB {
     private static XNanoHTTPD mHttpd;

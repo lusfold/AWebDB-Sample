@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 /**
  * @author <a href="http://www.lusfold.com" target="_blank">Lusfold</a>
- * @data 15/7/28.
  */
 public class HtmlMapper implements Mapper {
     private ArrayList<String> mHead;

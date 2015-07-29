@@ -6,7 +6,7 @@ import java.io.ByteArrayInputStream;
 
 /**
  * @author <a href="http://www.lusfold.com" target="_blank">Lusfold</a>
- * @data 15/7/28.
+
  */
 public class HtmlResponse extends NanoHTTPD.Response{
     private static final String DefaultMimeType = "text/HTML";

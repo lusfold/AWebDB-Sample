@@ -73,18 +73,12 @@ import javax.net.ssl.TrustManagerFactory;
 
 /**
  * A simple, tiny, nicely embeddable HTTP server in Java
- * <p/>
- * <p/>
  * NanoHTTPD
- * <p>
  * Copyright (c) 2012-2013 by Paul S. Hawke, 2001,2005-2013 by Jarno Elonen,
  * 2010 by Konstantinos Togias
- * </p>
- * <p/>
- * <p/>
  * <b>Features + limitations: </b>
  * <ul>
- * <p/>
+
  * <li>Only one Java file</li>
  * <li>Java 5 compatible</li>
  * <li>Released as open source, Modified BSD licence</li>
@@ -108,17 +102,15 @@ import javax.net.ssl.TrustManagerFactory;
  * <li>Contains a built-in list of most common MIME types</li>
  * <li>All header names are converted to lower case so they don't vary between
  * browsers/clients</li>
- * <p/>
+
  * </ul>
- * <p/>
- * <p/>
+
+
  * <b>How to use: </b>
  * <ul>
- * <p/>
+
  * <li>Subclass and implement serve() and embed to your own program</li>
- * <p/>
  * </ul>
- * <p/>
  * See the separate "LICENSE.md" file for the distribution license (Modified BSD
  * licence)
  */
@@ -307,7 +299,7 @@ public abstract class NanoHTTPD {
 
     /**
      * Default threading strategy for NanoHTTPD.
-     * <p/>
+    
      * <p>
      * By default, the server spawns a new Thread for every incoming request.
      * These are set to <i>daemon</i> status, and named according to the request
@@ -353,7 +345,7 @@ public abstract class NanoHTTPD {
 
     /**
      * Default strategy for creating and cleaning up temporary files.
-     * <p/>
+    
      * <p>
      * By default, files are created by <code>File.createTempFile()</code> in
      * the directory specified.
@@ -391,7 +383,7 @@ public abstract class NanoHTTPD {
 
     /**
      * Default strategy for creating and cleaning up temporary files.
-     * <p/>
+    
      * <p>
      * This class stores its files in the standard location (that is, wherever
      * <code>java.io.tmpdir</code> points to). Files are added to an internal
@@ -1187,7 +1179,7 @@ public abstract class NanoHTTPD {
         private boolean keepAlive;
 
         /**
-         * Creates a fixed length response if totalBytes>=0, otherwise chunked.
+         * Creates a fixed length response if totalBytes is not smaller than 0, otherwise chunked.
          */
         protected Response(IStatus status, String mimeType, InputStream data, long totalBytes) {
             this.status = status;
@@ -1465,7 +1457,7 @@ public abstract class NanoHTTPD {
 
     /**
      * A temp file.
-     * <p/>
+    
      * <p>
      * Temp files are responsible for managing the actual temporary storage and
      * cleaning themselves up when no longer needed.
@@ -1482,7 +1474,7 @@ public abstract class NanoHTTPD {
 
     /**
      * Temp file manager.
-     * <p/>
+    
      * <p>
      * Temp file managers are created 1-to-1 with incoming requests, to create
      * and cleanup temporary files created as a result of handling the request.
@@ -1819,8 +1811,6 @@ public abstract class NanoHTTPD {
 
     /**
      * Override this to customize the server.
-     * <p/>
-     * <p/>
      * (By default, this returns a 404 "Not Found" plain text error response.)
      *
      * @param session
@@ -1847,8 +1837,8 @@ public abstract class NanoHTTPD {
 
     /**
      * Override this to customize the server.
-     * <p/>
-     * <p/>
+    
+    
      * (By default, this returns a 404 "Not Found" plain text error response.)
      *
      * @param uri

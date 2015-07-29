@@ -9,7 +9,6 @@ import com.lusfold.awebdb.utils.StringUtils;
 
 /**
  * @author <a href="http://www.lusfold.com" target="_blank">Lusfold</a>
- * @data 15/7/28.
  */
 public class DBUtil {
     private static SQLiteDatabase db;

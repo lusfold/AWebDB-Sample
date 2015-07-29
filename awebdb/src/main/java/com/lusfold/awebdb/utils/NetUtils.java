@@ -9,7 +9,7 @@ import java.util.Enumeration;
 
 /**
  * @author <a href="http://www.lusfold.com" target="_blank">Lusfold</a>
- * @data 15/7/28.
+
  */
 public class NetUtils {
     public static final int DefaultPort = 8080;
